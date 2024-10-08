@@ -6,6 +6,13 @@ public final class FinalizeMethodDeclarePublic extends Applet {
 	public void finalize() {
 		System.out.println("Hello");
 		System.out.println("Hello");
+
+		try{
+			int i = 0;
+			File f = new File("/usr/jenkins/workspace/demo.txt");
+		}catch(Exception e){
+			System.out.println("Exception"+e);
+		}
 		} 
 }
 
